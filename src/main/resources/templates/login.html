@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<main>
+  <h1>BTWEB10</h1>
+  <p class="sub">JWT authentication demo</p>
+  <div class="tabs">
+    <button type="button" id="tab-login" class="active">Login</button>
+    <button type="button" id="tab-signup">Sign up</button>
+  </div>
+
+  <form id="login-form" autocomplete="on">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required autocomplete="username">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required autocomplete="current-password">
+    <button type="submit" id="Login" class="primary">Login</button>
+  </form>
+
+  <form id="signup-form" class="hidden" autocomplete="on">
+    <label for="su-name">Full name</label>
+    <input type="text" id="su-name" required maxlength="100" autocomplete="name">
+    <label for="su-email">Email</label>
+    <input type="email" id="su-email" required maxlength="100" autocomplete="username">
+    <label for="su-password">Password (6-72 characters)</label>
+    <input type="password" id="su-password" required minlength="6" maxlength="72" autocomplete="new-password">
+    <label for="su-images">Avatar URL (optional)</label>
+    <input type="text" id="su-images" maxlength="500" placeholder="https://...">
+    <button type="submit" class="primary">Create account</button>
+  </form>
+
+  <p id="feedback" class="msg" role="status"></p>
+</main>
+<script src="/mainjs.js"></script>
+</body>
+</html>

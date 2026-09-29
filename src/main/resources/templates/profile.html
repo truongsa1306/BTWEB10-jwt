@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile</title>
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<main>
+  <h1>Your profile</h1>
+  <p class="sub">Loaded from <code>GET /users/me</code> with your JWT</p>
+  <img id="images" class="avatar hidden" alt="Avatar" width="96" height="96">
+  <dl>
+    <dt>Name</dt><dd id="profile">…</dd>
+    <dt>Email</dt><dd id="p-email">…</dd>
+    <dt>Role</dt><dd id="p-role">…</dd>
+  </dl>
+  <button type="button" id="logout" class="primary">Logout</button>
+  <p id="feedback" class="msg" role="status"></p>
+</main>
+<script src="/mainjs.js"></script>
+</body>
+</html>
